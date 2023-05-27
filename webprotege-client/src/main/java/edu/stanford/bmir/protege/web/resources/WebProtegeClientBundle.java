@@ -208,6 +208,10 @@ public interface WebProtegeClientBundle extends ClientBundle {
     @DataResource.MimeType("image/svg+xml")
     DataResource svgSettingPanelIcon();
 
+    @Source("home-background-image.svg")
+    @DataResource.MimeType("image/svg+xml")
+    DataResource svgHomeBackgroundImage();
+
     @Source("home-icon.svg")
     @DataResource.MimeType("image/svg+xml")
     DataResource homeIcon();
@@ -459,6 +463,9 @@ public interface WebProtegeClientBundle extends ClientBundle {
 
         @ClassName("wp-panel-filled")
         String panelFilled();
+
+        @ClassName("wp-home-background")
+        String homeBackground();
 
         @ClassName("wp-panel-filled--border")
         String panelFilledBorder();

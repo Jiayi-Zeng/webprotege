@@ -336,7 +336,7 @@ public interface Messages extends com.google.gwt.i18n.client.Messages {
     String forbidden();
 
     
-    @DefaultMessage("Forgot username or password")
+    @DefaultMessage("Forgot Password")
     @Key("forgotUserNameOrPassword")
     String forgotUserNameOrPassword();
 

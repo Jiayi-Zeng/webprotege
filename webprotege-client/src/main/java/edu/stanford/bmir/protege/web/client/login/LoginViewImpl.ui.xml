@@ -15,32 +15,11 @@
             align-items: center;
         }
 
-        /*.signUp {*/
-        /*    flex-grow: 0;*/
-        /*    flex-shrink: 0;*/
-        /*}*/
-
-        .logo {
-            flex-grow: 0;
-            flex-shrink: 1;
-            background-position: center;
-        }
-
-        .message {
-            padding-top:    10px;
-            padding-bottom: 15px;
-        }
-
         .bottomBar {
             display:         flex;
             flex-direction:  row;
-            justify-content: flex-end;
+            justify-content: space-between;
         }
-
-        /*.wp-login__signup-button {*/
-        /*    margin:       3px;*/
-        /*    align-self: flex-end;*/
-        /*}*/
 
         .login-form {
             display: flex;
@@ -48,6 +27,14 @@
             align-items: stretch;
             flex-grow: 0;
             flex-shrink: 0;
+        }
+
+        .primary-button {
+            font-size: 22px;
+        }
+
+        .secondary-button {
+
         }
 
         .login-form input {
@@ -59,36 +46,36 @@
             color: inherit;
         }
 
-        /*.footnote {*/
-        /*    padding-top: 10px;*/
-        /*}*/
+        .footnote {
+            position: absolute;
+            left: 3em;
+            bottom: 0em;
+            color: white;
+            font-size: 25px;
+        }
     </ui:style>
 
 
-    <g:HTMLPanel addStyleNames="{style.main} {wp.login.login} {wp.style.panelFilled}">
-
-        <g:HTMLPanel addStyleNames="{wp.login.loginLogo} {style.logo}"/>
-
-        <g:Label text="{msg.signInToContinue}" addStyleNames="{wp.login.loginMessage} {style.message}"/>
-
+    <g:HTMLPanel addStyleNames="{style.main} {wp.style.homeBackground} {wp.login.login} {wp.style.panelFilled}">
         <g:HTMLPanel addStyleNames="{style.login-form} {wp.login.loginForm}">
-            <g:Label text="{msg.userName}" addStyleNames="{wp.style.formLabel}"/>
-            <g:TextBox ui:field="userNameField" visibleLength="30"/>
-            <div style="height: 10px;"/>
-            <g:Label text="{msg.password}" addStyleNames="{wp.style.formLabel}"/>
-            <g:PasswordTextBox ui:field="passwordField" visibleLength="30"/>
-            <div style="height: 20px;"/>
-            <g:Button ui:field="signInButton" text="{msg.signIn}"
-                      addStyleNames="{wp.buttons.button} {wp.buttons.pageButton} {wp.buttons.primaryButton}"/>
-            <div style="height: 10px;"/>
+        <g:Label text="{msg.userName}" addStyleNames="{wp.style.formLabel}"/>
+        <g:TextBox ui:field="userNameField" visibleLength="30"/>
+        <div style="height: 10px;"/>
+        <g:Label text="{msg.password}" addStyleNames="{wp.style.formLabel}"/>
+        <g:PasswordTextBox ui:field="passwordField" visibleLength="30"/>
+        <div style="height: 20px;"/>
+        <g:Button ui:field="signInButton" text="{msg.signIn}"
+                  addStyleNames="{style.primary-button} {wp.buttons.button} {wp.buttons.pageButton} {wp.buttons.primaryButton}"/>
+        <div style="height: 10px;"/>
+        <g:HTMLPanel addStyleNames="{style.bottomBar}">
+            <g:Button text="{msg.forgotUserNameOrPassword}" ui:field="forgotPasswordButton"
+                      addStyleNames="{style.secondary-button} {wp.buttons.button} {wp.buttons.pageButton} {wp.buttons.alternateButton}"/>
             <g:Button text="{msg.signUpForAccount}" ui:field="signUpForAccountButton"
-                      addStyleNames="{wp.buttons.button} {wp.buttons.pageButton} {wp.buttons.alternateButton}"/>
-            <g:HTMLPanel addStyleNames="{style.bottomBar}">
-                <g:Anchor text="{msg.forgotUserNameOrPassword}" ui:field="forgotPasswordButton"
-                          addStyleNames="{wp.login.loginForgotUsernameOrPassword}"/>
-            </g:HTMLPanel>
+                      addStyleNames="{style.secondary-button} {wp.buttons.button} {wp.buttons.pageButton} {wp.buttons.alternateButton}"/>
         </g:HTMLPanel>
-
+    </g:HTMLPanel >
+        <g:HTMLPanel addStyleNames="{style.footnote}">
+            <p>Copyright 2023, Xendat Data &amp; Analytics</p>
+        </g:HTMLPanel>
     </g:HTMLPanel>
-
 </ui:UiBinder>

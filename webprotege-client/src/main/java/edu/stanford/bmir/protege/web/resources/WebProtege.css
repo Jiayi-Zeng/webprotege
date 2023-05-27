@@ -23,6 +23,7 @@
 @url individualPanelIconUrl svgIndividualPanelIcon;
 @url propertiesPanelIconUrl svgPropertiesPanelIcon;
 @url settingPanelIconUrl svgSettingPanelIcon;
+@url homeBackgroundImageUrl svgHomeBackgroundImage;
 
 .gwt-TabLayoutPanelTab {
     background-color: #c0c0c0;
@@ -118,7 +119,8 @@
 .wp-form-label {
     font-weight: bold;
     padding-bottom: 5px;
-    font-size: 14px;
+    font-size: 22px;
+    color: white;
 }
 
 .wp-form-label--error {
@@ -391,8 +393,16 @@
     color: red;
 }
 
+.wp-home-background {
+    background-image: homeBackgroundImageUrl;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .wp-panel-filled {
-    background-color: literal("var(--inlay-panel--background-color)");
+    background-color: literal("var(--placeholder--color)");
 }
 
 .wp-panel-filled--border {
@@ -401,12 +411,20 @@
 
 .wp-panel-filled .gwt-TextBox {
     border: literal("var(--inlay-panel--border)");
-    background-color: literal("var(--primary--background-color)");
+    background-color: #e4e4e4;
+    border-radius: 5px;
+    height: 35px;
+    font-size: 19px;
+    padding-left: 10px
 }
 
 .wp-panel-filled .gwt-PasswordTextBox {
     border: literal("var(--inlay-panel--border)");
-    background-color: literal("var(--primary--background-color)");
+    background-color: #e4e4e4;
+    border-radius: 5px;
+    height: 35px;
+    font-size: 19px;
+    padding-left: 10px
 }
 
 .wp-panel-filled .gwt-TextArea {

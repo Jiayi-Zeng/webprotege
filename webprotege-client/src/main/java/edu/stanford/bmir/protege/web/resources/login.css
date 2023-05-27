@@ -17,14 +17,14 @@
 }
 
 .wp-login__form {
-    background-color: literal("var(--inlay-panel--alternate-background-color)");
-    border: 5px solid literal("var(--alternate--separator--color)");
-    width: 230px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    border-radius: 6px;
+    background: none;
+    border: 3px solid literal("var(--separator--color)");
+    width: 35em;
+    padding: 3.5em 3em;
+    border-radius: 15px;
+    position: absolute;
+    top: 30em;
+    left: 15em;
 }
 
 .wp-login__form .gwt-TextBox {
@@ -49,6 +49,6 @@
 }
 
 .wp-login__forgot-user-name-or-password {
-    padding-top:     20px;
-    padding-right:   0;
+    color: #fff;
+    background-color: #db5e33;
 }

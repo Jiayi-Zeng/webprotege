@@ -43,7 +43,7 @@ public class LoginViewImpl extends Composite implements LoginView {
     protected Button signInButton;
 
     @UiField
-    protected HasClickHandlers forgotPasswordButton;
+    protected Button forgotPasswordButton;
 
     @UiField
     protected Button signUpForAccountButton;

@@ -100,7 +100,6 @@
 
 .wp-btn--primary:hover {
     color: #fff;
-    background-color: #501c70;
 }
 
 .wp-btn--primary:disabled {
@@ -127,6 +126,7 @@
     color: #fff;
     background-color: #db5e33;
     text-decoration: none;
+    width: 13em;
 }
 
 .wp-btn--alternate:hover {
