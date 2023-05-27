@@ -25,6 +25,7 @@
 
     --highlighted-graph-color:              #F4743B;
     --secondary--graph-color:               #4F4E4E;
+    --secondary--graph-line-color:          whitesmoke;
 
     --alternate--background-color:          #fafafa;
     --alternate--separator--color:          #4F4E4E;
@@ -971,6 +972,8 @@ div.CodeMirror-linenumber.CodeMirror-gutter-elt {
 
 .wp-graph__node__shape--class {
     fill: var(--secondary--graph-color);
+    stroke: var(--highlighted-graph-color);
+    stroke-width: 1px;
 }
 
 .wp-graph__node__shape--individual {
@@ -1006,7 +1009,7 @@ div.CodeMirror-linenumber.CodeMirror-gutter-elt {
 }
 
 .wp-graph__edge--is-a {
-    stroke: var(--secondary--graph-color);
+    stroke: var(--secondary--graph-line-color);
 }
 .wp-graph__edge--ind-cls {
     stroke-dasharray: 3 3;
@@ -1035,7 +1038,7 @@ div.CodeMirror-linenumber.CodeMirror-gutter-elt {
 }
 
 .wp-graph__edge__arrow-head--is-a {
-    fill: var(--secondary--graph-color);
+    fill: var(--secondary--graph-line-color);
 }
 
 .wp-graph__edge__arrow-head--rel {

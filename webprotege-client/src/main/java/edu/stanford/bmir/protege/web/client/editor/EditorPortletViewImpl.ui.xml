@@ -12,12 +12,9 @@
         }
         .tabBar {
             background-color: literal("var(--alternate--background-color)");
-            padding-bottom: 2px;
-            padding-top: 1px;
             height: 5em;
         }
         .tagListContainer {
-            padding-top: 2px;
             padding-right: 2px;
             padding-left: 2px;
             flex-grow: 0;

@@ -20,6 +20,7 @@
             flex-grow: 1;
             flex-shrink: 1;
             position: relative;
+            background-color: literal("var(--primary--background-color)");
         }
         .canvas svg {
             position: absolute;

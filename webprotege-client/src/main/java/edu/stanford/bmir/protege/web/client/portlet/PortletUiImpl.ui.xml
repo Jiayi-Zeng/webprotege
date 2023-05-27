@@ -37,6 +37,7 @@
             flex-shrink: 1;
             overflow: auto;
             position: relative;
+            background-color: #808080;
         }
         .menuButton {
             justify-self: flex-end;
