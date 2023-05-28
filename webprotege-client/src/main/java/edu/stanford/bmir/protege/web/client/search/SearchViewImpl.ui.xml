@@ -17,7 +17,7 @@
         }
         .helpText {
         }
-        .foucusPanel {
+        .focusPanel {
             box-sizing: border-box;
             border: 1px solid literal("var(--separator--color)");
         }
@@ -74,7 +74,7 @@
         <g:Label text="{msg.search_help}" addStyleNames="{wp.style.formHelpText} {style.helpText}"/>
         <g:Label ui:field="searchSummaryField" addStyleNames="{style.searchSummaryLabel}"/>
         <progress:BusyViewImpl ui:field="busyView" visible="false" addStyleNames="{style.busyView}"/>
-        <g:FocusPanel ui:field="base" addStyleNames="{style.foucusPanel}">
+        <g:FocusPanel ui:field="base" addStyleNames="{style.focusPanel}">
             <g:ScrollPanel addStyleNames="{style.results}">
                 <g:FlowPanel ui:field="list"/>
             </g:ScrollPanel>
@@ -82,6 +82,5 @@
         <g:HTMLPanel addStyleNames="{style.paginator}">
             <pagination:PaginatorView ui:field="paginator"/>
         </g:HTMLPanel>
-
     </g:HTMLPanel>
 </ui:UiBinder>
